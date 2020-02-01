@@ -14,11 +14,13 @@ import 'package:welcome/src/slides/scaffold_slide.dart';
 import 'package:welcome/src/slides/starting_flutter_madrid.dart';
 import 'package:welcome/src/slides/telegram_slide.dart';
 import 'package:welcome/src/slides/thanks_slide.dart';
+import 'package:welcome/src/slides/todo_widget_slide.dart';
 import 'package:welcome/src/slides/twitter_slide.dart';
 import 'package:welcome/src/slides/web_slide.dart';
 
 const List<Widget> slides = [
   FirstSlide(),
+  TodoWidgetSlide(),
   StartingFlutterMadridSlide(),
   ScaffoldSlide(),
   Scaffold2Slide(),
@@ -41,16 +43,16 @@ class WelcomeApp extends StatelessWidget {
     return KeynoteApp(
       title: 'Welcome to Flutter Madrid',
       theme: ThemeData(
-        backgroundColor: Color(0xFF075b9a),
+        backgroundColor: Color(0xFF02569b),
         textTheme: TextTheme(
           display1: TextStyle(
-            color: Color(0xFF075b9a),
+            color: Color(0xFF0175c2),
             fontFamily: 'GoogleSans',
-            fontSize: 24.0,
+            fontSize: 28.0,
             fontWeight: FontWeight.bold,
           ),
           display2: TextStyle(
-            color: Color(0xFF6e7274),
+            color: Color(0xFF60646b),
             fontFamily: 'GoogleSans',
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
@@ -59,6 +61,11 @@ class WelcomeApp extends StatelessWidget {
             color: Colors.white,
             fontFamily: 'GoogleSans',
             fontSize: 20.0
+          ),
+          caption: TextStyle(
+            color: Color(0xFF202124),
+            fontFamily: 'GoogleSans',
+            fontSize: 18.0
           )
         )
       ),

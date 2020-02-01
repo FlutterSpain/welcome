@@ -39,39 +39,46 @@ class OrganizersSlide extends StatelessWidget {
                       style: Theme.of(context).textTheme.display1,
                     ),
                     Text(
-                      'Frontend developer en Accenture',
+                      'Front-end specialist en Accenture',
                       style: Theme.of(context).textTheme.display2,
                     ),
+                    SizedBox(height: 10,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Icon(FontAwesomeIcons.twitter),
+                        Icon(FontAwesomeIcons.twitter, color: Color(0xff00acee),),
                         SizedBox(width: 8,),
-                        Text('@achamorro_')
+                        Text('@achamorro_', style: Theme.of(context).textTheme.caption,)
                       ],
                     ),
+                    SizedBox(height: 4,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Icon(FontAwesomeIcons.google),
+                        Icon(FontAwesomeIcons.google, color: Color(0xffdb4a39)),
                         SizedBox(width: 8,),
-                        Text('a.chamorro.ruiz@gmail.com')
+                        Text('a.chamorro.ruiz@gmail.com', style: Theme.of(context).textTheme.caption,)
                       ],
                     ),
+                    SizedBox(height: 4,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Icon(FontAwesomeIcons.linkedin),
+                        Icon(FontAwesomeIcons.linkedin, color: Color(0xff0e76a8)),
                         SizedBox(width: 8,),
-                        Text('https://www.linkedin.com/in/alberto-chamorro-42b1b156/')
+                        Text(
+                          'https://www.linkedin.com/in/alberto-chamorro/',
+                          style: Theme.of(context).textTheme.caption,
+                        )
                       ],
                     ),
+                    SizedBox(height: 4,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Icon(FontAwesomeIcons.github),
+                        Icon(FontAwesomeIcons.github, color: Color(0xff24292e),),
                         SizedBox(width: 8,),
-                        Text('https://github.com/ach4m0/')
+                        Text('https://github.com/ach4m0/', style: Theme.of(context).textTheme.caption,)
                       ],
                     ),
                   ],
@@ -89,9 +96,7 @@ class OrganizersSlide extends StatelessWidget {
           children: [
             HeroTextWidget(tag: 'fluttermadrid', text: 'FlutterMadrid(\n',),
             HeroTextWidget(tag: 'logofluttermadrid', text: '  logo: flutter_madrid.png\n',),
-            HeroTextWidget(tag: 'organizers', text: '  organizers: [\n',),
-            HeroTextWidget(tag: 'organizerAlberto', text: '    Alberto()\n',),
-            HeroTextWidget(tag: 'organizersclosing', text: '  ],\n',),
+            HeroTextWidget(tag: 'organizers', text: '  organizers: [ Alberto() ],\n',),
             HeroTextWidget(tag: 'closefluttermadrid', text: ')\n',),
           ],
         ),

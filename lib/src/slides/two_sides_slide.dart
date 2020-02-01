@@ -21,14 +21,16 @@ class TwoSidesSlide extends StatelessWidget {
               child: leftChild
             ),
           ),
-          Flexible(
-            flex: 3,
-            fit: FlexFit.tight,
-            child: Container(
-              color: Theme.of(context).backgroundColor,
-              child: rightChild
-            ),
-          )
+          MediaQuery.of(context).size.width > 1024 ?
+            Flexible(
+              flex: 3,
+              fit: FlexFit.tight,
+              child: Container(
+                color: Theme.of(context).backgroundColor,
+                child: rightChild
+              ),
+            ) :
+            Container()
         ],
       )
     );

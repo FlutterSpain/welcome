@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class StartingFlutterMadridSlide extends StatelessWidget {
-  const StartingFlutterMadridSlide({Key key}) : super(key: key);
+class TodoWidgetSlide extends StatelessWidget {
+  const TodoWidgetSlide({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class StartingFlutterMadridSlide extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('En Flutter todo es un widget', style: Theme.of(context).textTheme.display3),
-            Text('Flutter Madrid también', style: Theme.of(context).textTheme.display3),
+            Text('', style: Theme.of(context).textTheme.display3),
           ]
         ),
       )

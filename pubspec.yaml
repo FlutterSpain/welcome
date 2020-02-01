@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_keynote:
   font_awesome_flutter:
+  url_launcher: ^5.4.1
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +48,8 @@ flutter:
    - assets/images/icon_flutter_madrid.png
    - assets/images/logo_bigger.png
    - assets/images/alberto.png
+   - assets/images/jaime.jpg
+   - assets/images/icon_flutter_madrid.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

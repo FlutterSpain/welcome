@@ -1,38 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_keynote/flutter_keynote.dart';
+import 'package:welcome/src/slides/code_slide/code_slide.dart';
 
 import 'package:welcome/src/slides/first_slide.dart';
-import 'package:welcome/src/slides/gmail_slide.dart';
-import 'package:welcome/src/slides/logo_slide.dart';
+
 import 'package:welcome/src/slides/made_with_flutter_slide.dart';
-import 'package:welcome/src/slides/meetup_slide.dart';
-import 'package:welcome/src/slides/members_slide.dart';
-import 'package:welcome/src/slides/organizers2_slide.dart';
-import 'package:welcome/src/slides/organizers_slide.dart';
-import 'package:welcome/src/slides/scaffold2_slide.dart';
-import 'package:welcome/src/slides/scaffold_slide.dart';
-import 'package:welcome/src/slides/starting_flutter_madrid.dart';
-import 'package:welcome/src/slides/telegram_slide.dart';
 import 'package:welcome/src/slides/thanks_slide.dart';
-import 'package:welcome/src/slides/todo_widget_slide.dart';
-import 'package:welcome/src/slides/twitter_slide.dart';
-import 'package:welcome/src/slides/web_slide.dart';
+import 'package:welcome/src/slides/second_slide.dart';
 
 const List<Widget> slides = [
+  FirstSlide(isPaused: true),
   FirstSlide(),
-  TodoWidgetSlide(),
-  StartingFlutterMadridSlide(),
-  ScaffoldSlide(),
-  Scaffold2Slide(),
-  LogoSlide(),
-  OrganizersSlide(),
-  Organizers2Slide(),
-  MeetupSlide(),
-  WebSlide(),
-  TwitterSlide(),
-  TelegramSlide(),
-  GmailSlide(),
-  MembersSlide(),
+  SecondSlide(state: SecondSlideState.first),
+  SecondSlide(state: SecondSlideState.second),
+  CodeSlide(state: CodeState.material),
+  CodeSlide(state: CodeState.logo),
+  CodeSlide(state: CodeState.alberto),
+  CodeSlide(state: CodeState.jaime),
+  CodeSlide(state: CodeState.meetup),
+  CodeSlide(state: CodeState.web),
+  CodeSlide(state: CodeState.twitter),
+  CodeSlide(state: CodeState.telegram),
+  CodeSlide(state: CodeState.gmail),
+  CodeSlide(state: CodeState.members),
   MadeWithFlutterSlide(),
   ThanksSlide(),
 ];

@@ -1,19 +1,32 @@
+import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_controller.dart';
 import 'package:flutter/material.dart';
 
-class FirstSlide extends StatelessWidget {
-  const FirstSlide({Key key}) : super(key: key);
 
+
+class FirstSlide extends StatefulWidget {
+  final bool isPaused;
+
+  const FirstSlide({Key key, this.isPaused = false}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() => _FirstSlideState();
+}
+
+class _FirstSlideState extends State<FirstSlide> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
-      body: Center(
-          child: Image.asset(
-            'assets/images/icon_flutter_madrid.png',
-            width: 200,
-            height: 200,
-          )
+        body: Center(
+      child: Hero(
+
+        tag: widget.isPaused ? 'jguyf' :'logo',
+        child: SizedBox(
+          height: 300,
+          child: FlareActor("assets/images/logo.flr",
+              isPaused: widget.isPaused, animation: "reverse"),
         ),
-    );
+      ),
+    ));
   }
 }

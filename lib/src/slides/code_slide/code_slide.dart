@@ -159,7 +159,7 @@ class CodeSlide extends StatelessWidget {
               OrganizerAvatar(data: Organizers.jaime, radius: 40),
             ],
           ),
-          SizedBox(height: 32),
+          SizedBox(height: 16),
           if (state == CodeState.members)
             Expanded(child: Members())
           else
@@ -187,7 +187,6 @@ class CodeSlide extends StatelessWidget {
     String flutterMadrid = '''MaterialApp(
   title: 'Flutter Madrid',
   home: FlutterMadrid(
-  
     logo: 'logo_madrid.png',
 ''';
 

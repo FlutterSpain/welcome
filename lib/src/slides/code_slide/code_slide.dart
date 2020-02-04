@@ -60,8 +60,7 @@ class CodeSlide extends StatelessWidget {
             ),
             Hero(
               tag: 'code-end',
-              child: HighlightView(
-                '   ),\n)',
+              child: HighlightView('   ),\n)',
                 padding: EdgeInsets.zero,
                 language: 'dart',
                 theme: madridTheme,
@@ -181,33 +180,31 @@ class CodeSlide extends StatelessWidget {
       return '''MaterialApp(
   title: 'Flutter Madrid',
   appBar: AppBar(title: Text('Flutter Madrid')),
-  home: FlutterMadrid(
-''';
+  home: FlutterMadrid(''';
 
     String flutterMadrid = '''MaterialApp(
   title: 'Flutter Madrid',
   home: FlutterMadrid(
-    logo: 'logo_madrid.png',
-''';
+    logo: 'logo_madrid.png',''';
 
     if (state == CodeState.alberto)
-      flutterMadrid += '    organizers: [ Alberto() ],\n';
+      flutterMadrid += '\n    organizers: [ Alberto() ],';
 
     if (state.index >= CodeState.jaime.index)
-      flutterMadrid += '    organizers: [ Alberto(), Jaime() ],\n';
+      flutterMadrid += '\n    organizers: [ Alberto(), Jaime() ],';
     if (state.index >= CodeState.meetup.index)
-      flutterMadrid +=
-          '    meetup: \'https://www.meetup.com/es-ES/Flutter-Madrid\',\n';
+      flutterMadrid += 
+          '\n    meetup: \'https://www.meetup.com/es-ES/Flutter-Madrid\',';
     if (state.index >= CodeState.web.index)
-      flutterMadrid += '    web: \'https://flutter.madrid\',\n';
+      flutterMadrid += '\n    web: \'https://flutter.madrid\',';
     if (state.index >= CodeState.twitter.index)
-      flutterMadrid += '    twitter: \'@FlutterMadrid\',\n';
+      flutterMadrid += '\n    twitter: \'@FlutterMadrid\',';
     if (state.index >= CodeState.telegram.index)
-      flutterMadrid += '    telegram: \'Flutter Madrid\',\n';
+      flutterMadrid += '\n    telegram: \'Flutter Madrid\',';
     if (state.index >= CodeState.gmail.index)
-      flutterMadrid += '    email: \'fluttermadrid@gmail.com\',\n';
+      flutterMadrid += '\n    email: \'fluttermadrid@gmail.com\',';
     if (state.index >= CodeState.members.index)
-      flutterMadrid += '    members: MeetupMembers.list,\n';
+      flutterMadrid += '\n    members: MeetupMembers.list,';
     return flutterMadrid;
   }
 }

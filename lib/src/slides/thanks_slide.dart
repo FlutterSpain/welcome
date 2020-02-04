@@ -16,7 +16,7 @@ class _ThanksSlideState extends State<ThanksSlide> {
   void initState() {
     super.initState();
     
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(Duration(seconds: 1), () {
       setState(() {
         _textVisible = true;
       });
@@ -35,8 +35,8 @@ class _ThanksSlideState extends State<ThanksSlide> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              height: 300,
-              width: 300,
+              height: 400,
+              width: 400,
               child: FlareActor(
                 'assets/images/blue_heart.flr',
                 animation: 'thanks',
@@ -46,8 +46,8 @@ class _ThanksSlideState extends State<ThanksSlide> {
               opacity: _textVisible ? 1.0 : 0.0,
               duration: Duration(seconds: 1),
               curve: Curves.easeInOut,
-              child: Text('¡Gracias!', style: Theme.of(context).textTheme.body2.copyWith(
-                fontSize: 40.0
+              child: Text('¡Gracias!', style: Theme.of(context).textTheme.display3.copyWith(
+                color: Colors.white
               ))
             )
           ]

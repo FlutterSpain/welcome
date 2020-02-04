@@ -21,7 +21,7 @@ class Organizers {
       id: 'alberto',
       name: 'Alberto Chamorro',
       imageAssetsUrl: 'assets/images/alberto.png',
-      jobDescription: 'Front-end specialist en Accenture',
+      jobDescription: 'Front-end Specialist, Accenture',
       socialMedia:
       {
         SocialMedia.twitter: '@achamorro_',
@@ -35,7 +35,7 @@ class Organizers {
       id: 'jaime',
       name: 'Jaime Blasco',
       imageAssetsUrl: 'assets/images/jaime.jpg',
-      jobDescription: 'Software Engineer en Mox Health',
+      jobDescription: 'Software Engineer, Mox Health',
       socialMedia:
       {
         SocialMedia.twitter: '@JamesBlasco',
@@ -76,7 +76,7 @@ class Organizer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         OrganizerAvatar(radius: 100, data: data),
         SizedBox(width: 20),

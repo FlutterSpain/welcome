@@ -10,7 +10,7 @@ enum SocialMedia {
   meetup,
   google,
   linkedin,
-  web
+  web,
 }
 
 
@@ -35,6 +35,8 @@ class SocialMediaIcon extends Icon {
         return FontAwesomeIcons.linkedin;
       case SocialMedia.web:
         return FontAwesomeIcons.globeEurope;
+      case SocialMedia.github:
+        return FontAwesomeIcons.github;
     }
   }
 
@@ -135,7 +137,8 @@ final socialUrlMap = {
   SocialMedia.twitter: 'https://twitter.com/FlutterMadrid',
   SocialMedia.telegram: 'https://t.me/fluttermadrid',
   SocialMedia.google: 'mailto://fluttermadrid@gmail.com',
-  SocialMedia.web: 'https://flutter.madrid'
+  SocialMedia.web: 'https://flutter.madrid',
+  SocialMedia.github: 'https://github.com/flutter-madrid/'
 };
 
 final socialTitleMap = {
@@ -143,5 +146,6 @@ final socialTitleMap = {
   SocialMedia.twitter: '@FlutterMadrid',
   SocialMedia.telegram: '@FlutterMadrid',
   SocialMedia.google: 'fluttermadrid@gmail.com',
-  SocialMedia.web: 'https://flutter.madrid'
+  SocialMedia.web: 'https://flutter.madrid',
+  SocialMedia.github: 'https://github.com/flutter-madrid/'
 };

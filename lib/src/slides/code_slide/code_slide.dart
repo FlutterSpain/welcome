@@ -16,6 +16,7 @@ enum CodeState {
   twitter,
   telegram,
   gmail,
+  github,
   members
 }
 
@@ -93,6 +94,8 @@ class CodeSlide extends StatelessWidget {
         return SocialMediaTile(SocialMedia.telegram);
       case CodeState.gmail:
         return SocialMediaTile(SocialMedia.google);
+      case CodeState.github:
+        return SocialMediaTile(SocialMedia.github);
     }
   }
 
@@ -106,8 +109,10 @@ class CodeSlide extends StatelessWidget {
           ),
         ),
       );
+
     else if (state == CodeState.logo)
       return Center(child: StaticLogo(width: 450));
+
     else if (state == CodeState.alberto)
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,6 +120,7 @@ class CodeSlide extends StatelessWidget {
           StaticLogo.small(),
         ],
       );
+      
     else if (state == CodeState.jaime)
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -145,6 +151,9 @@ class CodeSlide extends StatelessWidget {
       if (state.index > CodeState.gmail.index)
         socialMedia
             .add(FlutterSocialMediaButton(socialMedia: SocialMedia.google));
+      if (state.index > CodeState.github.index)
+        socialMedia
+            .add(FlutterSocialMediaButton(socialMedia: SocialMedia.github));
 
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -203,6 +212,8 @@ class CodeSlide extends StatelessWidget {
       flutterMadrid += '\n    telegram: \'Flutter Madrid\',';
     if (state.index >= CodeState.gmail.index)
       flutterMadrid += '\n    email: \'fluttermadrid@gmail.com\',';
+    if (state.index >= CodeState.github.index)
+      flutterMadrid += '\n    github: \'https://github.com/flutter-madrid/\',';
     if (state.index >= CodeState.members.index)
       flutterMadrid += '\n    members: MeetupMembers.list,';
     return flutterMadrid;

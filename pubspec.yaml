@@ -1,5 +1,5 @@
 name: welcome
-description: A new Flutter project.
+description: Presentation for Flutter Madrid.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -23,7 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  flutter_keynote:
+  flutter_keynote: ^0.1.2
   font_awesome_flutter:
   url_launcher: ^5.4.1
   flare_flutter: ^2.0.1

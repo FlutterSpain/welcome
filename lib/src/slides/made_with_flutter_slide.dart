@@ -14,7 +14,7 @@ class MadeWithFlutterSlide extends StatelessWidget {
             Text('Hecho con Flutter', style: Theme.of(context).textTheme.display3.copyWith(
               color: Colors.white
             )),
-            Text('y flutter_keynote', style: Theme.of(context).textTheme.display1.copyWith(
+            Text('https://pub.dev/packages/flutter_keynote', style: Theme.of(context).textTheme.display1.copyWith(
               color: Color(0xe613b9fd)
             )),
           ]

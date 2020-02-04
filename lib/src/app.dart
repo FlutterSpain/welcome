@@ -23,7 +23,7 @@ const List<Widget> slides = [
   CodeSlide(state: CodeState.telegram),
   CodeSlide(state: CodeState.gmail),
   CodeSlide(state: CodeState.github),
-  // CodeSlide(state: CodeState.members),
+  CodeSlide(state: CodeState.members),
   MadeWithFlutterSlide(),
   ThanksSlide(),
 ];
